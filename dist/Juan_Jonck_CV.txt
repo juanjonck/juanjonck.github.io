@@ -1,0 +1,115 @@
+JUAN JONCK - CURRICULUM VITAE
+=============================
+
+Full Stack PHP Developer
+------------------------
+
+CONTACT INFORMATION
+-------------------
+Email: hello@juanjonck.dev
+Website: https://juanjonck.github.io
+Location: South Africa (UTC+2)
+
+PROFESSIONAL SUMMARY
+--------------------
+Fullstack Developer with core strength in PHP development, including both pure PHP 
+programming and practical experience with Laravel and CodeIgniter frameworks. 
+Proficient in building robust web applications using MySQL, Git, HTML, CSS3, Bootstrap, 
+and JavaScript/jQuery.
+
+Expanding technical horizons through hands-on experience with Angular, AWS, and Flutter. 
+Strong foundation in database design and implementation, consistently delivering quality 
+web solutions.
+
+Known for rapid adaptation to new technologies and a determined problem-solving approach 
+- if it exists, I'll learn it and master it.
+
+Currently exploring AI/ML through LangChain, building agents, workflows, and RAG systems.
+
+TECHNICAL SKILLS
+----------------
+Core Strengths:
+- Pure PHP (Expert)
+- MySQL / Database Design (Expert)
+- HTML5 / CSS3 / Bootstrap (Expert)
+- JavaScript / jQuery (Expert)
+- Git (Expert)
+
+Frameworks:
+- Laravel (Advanced)
+- CodeIgniter (Advanced)
+
+Learning & Exposure:
+- Angular (Intermediate)
+- AWS (Intermediate)
+- Flutter (Intermediate)
+
+AI & Emerging Tech:
+- LangChain
+- AI Agents & Workflows
+- RAG Systems
+- Prompt Engineering
+- Automation
+
+WORK EXPERIENCE
+---------------
+
+Developer — Elemental Web Solutions
+October 2023 – Present | Cape Town, Western Cape, South Africa
+
+- Develop robust web and software applications using PHP (pure PHP, CodeIgniter, Laravel)
+- Focus on scalable back-end solutions and database architecture
+- Implement front-end solutions and ensure seamless front-end/back-end integration
+- Own complete feature development cycles from database design to UI implementation
+- Use HTML, CSS3, Bootstrap, JavaScript, and jQuery
+- Quickly adapt to new technical requirements and solve complex problems
+
+Lead Developer — CRT Group
+January 2018 – October 2023 | George, Western Cape, South Africa
+
+- Led development of web applications and custom software solutions
+- Customized systems to meet specific client requirements
+- Mentored and guided developers and interns
+- Provided ongoing bug support to ensure system stability
+- Managed email setup and technical support
+- Contributed to overall system efficiency and reliability
+
+EDUCATION
+---------
+
+National Certificate: Information Technology – Database Development
+January 2017 – December 2017
+CTU Training Solutions, Port Elizabeth, South Africa
+
+Modules: Data Analysis and Reporting, Database Development, Basic Server Security, 
+Data Warehouse Development, Advanced Server Security, Analytical Support Systems
+
+National Certificate: Information Technology – Systems Development
+January 2016 – December 2016
+CTU Training Solutions, Port Elizabeth, South Africa
+
+Modules: Basic Java, Intermediate Programming, Intermediate Web Development, 
+Advanced Programming, Introduction to Games Development, Advanced Java, Advanced Web Development
+
+PROJECTS
+--------
+- E-Commerce Platform (Laravel + MySQL + Angular)
+- Booking Engine (PHP + CodeIgniter + Bootstrap)
+- CRM Integration (Laravel + REST APIs + MySQL)
+- Analytics Dashboard (Angular + PHP + Chart.js)
+- Automation Layer (PHP + Laravel Queue + Webhooks)
+
+PERSONAL PROJECTS
+-----------------
+- DevTools Dashboard - Metrics for side projects
+- AI Agent Experiments - LangChain + RAG pipelines
+- UI Component Kit - Accessible, animatable blocks
+
+INTERESTS
+---------
+Music, Cooking and Culinary Arts, Technology and Gadgets, Film and Cinema, 
+Gaming, Pets and Animals, Fishing, Sports
+
+REFERENCES
+----------
+Available upon request
