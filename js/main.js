@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimations();
     initHeroAnimations();
     initProjectAnimations();
+    initProjectIframes();
     initAboutAnimations();
     initContactAnimations();
 });
@@ -262,6 +263,54 @@ function initProjectAnimations() {
             );
         }
     }
+}
+
+/**
+ * PROJECT IFRAMES
+ * Lazy-load iframes via IntersectionObserver as sections scroll into view
+ */
+function initProjectIframes() {
+    var containers = document.querySelectorAll('.project-image[data-iframe-src]');
+    if (!containers.length) return;
+
+    // Set href on each overlay link
+    containers.forEach(function(container) {
+        var src = container.getAttribute('data-iframe-src');
+        var overlay = container.querySelector('.project-live-overlay');
+        if (overlay && src && src !== 'https://example.com') {
+            overlay.href = src;
+        }
+    });
+
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (!entry.isIntersecting) return;
+
+            var container = entry.target;
+            var src = container.getAttribute('data-iframe-src');
+            if (!src || src === 'https://example.com') return;
+
+            var iframe = container.querySelector('iframe');
+            var skeleton = container.querySelector('.project-iframe-skeleton');
+            if (!iframe || iframe.src) return;
+
+            iframe.src = src;
+
+            iframe.addEventListener('load', function() {
+                iframe.classList.add('loaded');
+                if (skeleton) skeleton.classList.add('hidden');
+            });
+
+            observer.unobserve(container);
+        });
+    }, {
+        rootMargin: '200px 0px',
+        threshold: 0
+    });
+
+    containers.forEach(function(container) {
+        observer.observe(container);
+    });
 }
 
 /**

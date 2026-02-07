@@ -371,6 +371,153 @@ body {
 }
 
 /* ============================================
+   PROJECT IFRAME EMBEDS
+   ============================================ */
+.project-image {
+    position: relative;
+}
+
+.project-image iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.project-image iframe.loaded {
+    opacity: 1;
+}
+
+/* Skeleton loader */
+.project-iframe-skeleton {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0B1022;
+    z-index: 1;
+    transition: opacity 0.4s ease;
+}
+
+.project-iframe-skeleton.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.skeleton-pulse {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        110deg,
+        transparent 30%,
+        rgba(79, 109, 255, 0.04) 50%,
+        transparent 70%
+    );
+    background-size: 200% 100%;
+    animation: skeletonShimmer 1.8s ease-in-out infinite;
+}
+
+@keyframes skeletonShimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.skeleton-text {
+    position: relative;
+    z-index: 2;
+    color: rgba(242, 245, 255, 0.3);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+}
+
+/* Live site hover overlay */
+.project-live-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(7, 10, 18, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.project-image:hover .project-live-overlay {
+    opacity: 1;
+}
+
+.project-live-overlay .overlay-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #4F6DFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.project-live-overlay:hover .overlay-icon {
+    transform: scale(1.1);
+}
+
+.project-live-overlay .overlay-label {
+    color: #F2F5FF;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    opacity: 0.7;
+}
+
+/* Live badge (always visible) */
+.project-live-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: rgba(7, 10, 18, 0.75);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(242, 245, 255, 0.08);
+    color: rgba(242, 245, 255, 0.6);
+    font-size: 0.625rem;
+    letter-spacing: 0.14em;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.project-image iframe.loaded ~ .project-live-overlay ~ .project-live-badge {
+    opacity: 1;
+}
+
+.live-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4F6DFF;
+    animation: livePulse 2s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* ============================================
    ANIMATIONS
    ============================================ */
 @keyframes fadeInUp {
